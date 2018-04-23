@@ -1,0 +1,21 @@
+---
+- name: Dante | Install dante
+  package:
+    name: dante-server
+    state: latest
+
+- name: Dante | Configure
+  template:
+    src: danted.conf
+    dest: /etc/danted.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - Restart Dante
+
+- name: Dante | Ensure service
+  service:
+    name: danted
+    enabled: yes
+    state: started

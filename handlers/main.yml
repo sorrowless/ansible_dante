@@ -1,0 +1,6 @@
+---
+- name: Restart Dante
+  service:
+    name: danted
+    state: restarted
+
