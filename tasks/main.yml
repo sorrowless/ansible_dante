@@ -2,7 +2,7 @@
 - name: Dante | Install dante
   package:
     name: dante-server
-    state: latest
+    state: present
 
 - name: Dante | Configure
   template:
