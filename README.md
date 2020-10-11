@@ -1,42 +1,26 @@
-sbog/dante
-==========
+# sbog/dante
+
+[![Build Status](https://travis-ci.com/sorrowless/ansible_apprise.svg?branch=master)](https://travis-ci.com/sorrowless/ansible_apprise)
+[![Ansible Role](https://img.shields.io/ansible/role/38039)](https://galaxy.ansible.com/sorrowless/apprise)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/38039)](https://galaxy.ansible.com/sorrowless/apprise)
+[![Ansible Role](https://img.shields.io/ansible/role/d/38039)](https://galaxy.ansible.com/sorrowless/apprise)
+[![GitHub](https://img.shields.io/github/license/sorrowless/ansible_apprise)](https://github.com/sorrowless/ansible_apprise/blob/master/LICENSE)
 
 Role to install and configure Dante socks4/5 server
 
-#### Requirements
+## Requirements
 
 Ansible 2.4
 
-#### Role Variables
+## Role Variables
 
-```yaml
-# Configuration actually just repeats dante config, so read dante documentation
-# first to understand what all these fields really mean
-danted:
-  logoutput: /var/log/danted.log
-  internal_name: "{{ ansible_default_ipv4.interface }}"
-  internal_port: 1027
-  external: "{{ ansible_default_ipv4.interface }}"
-  clientmethod: none
-  method: none
-  user:
-    privileged: root
-    notprivileged: nobody
-    libwrap: nobody
-  client:
-    pass:
-      first_client_pass:
-        - "from: 0.0.0.0/0 to: 0.0.0.0/0"
-  pass:
-    first_pass:
-      - "from: 0.0.0.0/0 to: 0.0.0.0/0"
-```
+Look for these at `defaults/main.yml` file.
 
-#### Dependencies
+## Dependencies
 
 None
 
-#### Example Playbook
+## Example Playbook
 
 ```yaml
 - name: Install Dante proxy to target servers
@@ -47,10 +31,10 @@ None
     - { role: dante, tags: ['dante'] }
 ```
 
-#### License
+## License
 
 Apache 2.0
 
-#### Author Information
+## Author Information
 
-Stanislaw Bogatkin (https://sbog.ru)
+This role was created by [Stan Bogatkin](https://sbog.ru).

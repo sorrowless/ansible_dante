@@ -4,4 +4,4 @@
   remote_user: root
 
   roles:
-    - { role: dante, tags: ['dante'] }
+    - {role: dante, tags: ['dante']}

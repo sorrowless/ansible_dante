@@ -1,0 +1,22 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=true cache_valid_time=600
+      changed_when: false
+      when: ansible_os_family == 'Debian'
+
+  roles:
+    - role: dante
+
+  post_tasks:
+    - name: Check danted port is accessible from current host
+      wait_for:
+        host: "{{ ansible_default_ipv4.address }}"
+        port: 1027
+        state: started
+        delay: 3
+        timeout: 5

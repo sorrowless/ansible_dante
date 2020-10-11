@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Stanislaw Bogatkin
   description: Ansible role to deploy Dante socks4/5 server
@@ -8,9 +9,11 @@ galaxy_info:
   min_ansible_version: 2.4
 
   platforms:
-  - name: Ubuntu
-    versions:
-    - xenial
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
 
   galaxy_tags: [dante, danted, proxy, socks, socks4, socks5]
 
