@@ -1,10 +1,10 @@
 # sbog/dante
 
-[![Build Status](https://travis-ci.com/sorrowless/ansible_apprise.svg?branch=master)](https://travis-ci.com/sorrowless/ansible_apprise)
-[![Ansible Role](https://img.shields.io/ansible/role/38039)](https://galaxy.ansible.com/sorrowless/apprise)
-[![Ansible Quality Score](https://img.shields.io/ansible/quality/38039)](https://galaxy.ansible.com/sorrowless/apprise)
-[![Ansible Role](https://img.shields.io/ansible/role/d/38039)](https://galaxy.ansible.com/sorrowless/apprise)
-[![GitHub](https://img.shields.io/github/license/sorrowless/ansible_apprise)](https://github.com/sorrowless/ansible_apprise/blob/master/LICENSE)
+[![Build Status](https://travis-ci.com/sorrowless/ansible_dante.svg?branch=master)](https://travis-ci.com/sorrowless/ansible_dante)
+[![Ansible Role](https://img.shields.io/ansible/role/25790)](https://galaxy.ansible.com/sorrowless/dante)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/25790)](https://galaxy.ansible.com/sorrowless/dante)
+[![Ansible Role](https://img.shields.io/ansible/role/d/25790)](https://galaxy.ansible.com/sorrowless/dante)
+[![GitHub](https://img.shields.io/github/license/sorrowless/ansible_dante)](https://github.com/sorrowless/ansible_dante/blob/master/LICENSE)
 
 Role to install and configure Dante socks4/5 server
 
